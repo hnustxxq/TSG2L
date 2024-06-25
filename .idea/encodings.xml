@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/datasets/anomaly/Anomaly_Detection_Falling_People" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/datasets/forecast/NEW-DATA-1.T15.csv" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/datasets/forecast/效果不好/AA.csv" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/datasets/forecast/效果不好/AF.PA.csv" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/datasets/forecast/效果不好/AGS.AX.csv" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/datasets/forecast/效果不好/AKZA.AS.csv" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/datasets/forecast/效果不好/ASML.AS.csv" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/datasets/forecast/效果不好/BAMNB.AS.csv" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/datasets/forecast/效果不好/BOKA.AS.csv" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/datasets/forecast/效果不好/exchange_rate.csv" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/datasets/solar_AL.txt" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/models/encoder_class.py" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/models/joint_1.py" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/models/weight_matrix.py" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/models/word2vec.py" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/models/word2vec_class.py" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/run_class.py" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/run_forecast.py" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/tasks/classification.py" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/ts2vec.py" charset="GBK" />
+    <file url="PROJECT" charset="GBK" />
+  </component>
+</project>

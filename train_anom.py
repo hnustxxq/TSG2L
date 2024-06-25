@@ -5,7 +5,7 @@ import os
 import sys
 import time
 import datetime
-from run_anom import TS2Vec
+from run_anom import TSG2L
 import tasks
 import datautils
 from utils import init_dl_program, name_with_datetime, pkl_save, data_dropout
@@ -96,7 +96,7 @@ if __name__ == '__main__':
 
 
 
-    model = TS2Vec(
+    model =TSG2L(
         input_dims=train_data.shape[1],
         device=device,
         size_cent=args.size_cent,

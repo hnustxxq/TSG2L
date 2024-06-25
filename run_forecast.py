@@ -12,7 +12,7 @@ import matplotlib.pyplot as plt
 
 
 #三个个尺度
-class TS2Vec:
+class TSG2L:
     def __init__(
             self,
             input_dims,
@@ -141,11 +141,13 @@ class TS2Vec:
                         ########################################
                         noise = torch.randn(sample.shape)
 
+
                         #########新加入代码
                         mask = torch.bernoulli(torch.full_like(noise, self.p_recon))
                         noise = noise * mask
 
                         sample_with_noise = sample + noise
+
                         sampled_tensor[:, j, 0] = sample_with_noise.ravel()
 
                     x = sampled_tensor

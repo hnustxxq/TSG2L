@@ -5,7 +5,7 @@ import os
 import sys
 import time
 import datetime
-from run_class import TS2Vec
+from run_class import TSG2L
 import tasks
 import datautils
 from utils import init_dl_program, name_with_datetime, pkl_save, data_dropout
@@ -57,7 +57,7 @@ if __name__ == '__main__':
     data = np.concatenate((train_data, test_data), axis=0)
     data = data.reshape(data.shape[0], data.shape[1])
 
-    model = TS2Vec(
+    model = TSG2L(
         input_dims=train_data.shape[1],
         device=device,
         size_cent=args.size_cent,

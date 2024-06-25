@@ -12,7 +12,7 @@ import matplotlib.pyplot as plt
 
 
 #三个个尺度
-class TS2Vec:
+class TSG2L:
     def __init__(
             self,
             input_dims,

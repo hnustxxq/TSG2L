@@ -3,7 +3,7 @@ import numpy as np
 import argparse
 import time
 import datetime
-from run_forecast import TS2Vec
+from run_forecast import TSG2L
 import tasks
 import datautils
 from utils import init_dl_program, name_with_datetime, pkl_save, data_dropout
@@ -26,7 +26,7 @@ if __name__ == '__main__':
     parser.add_argument('--c', type=int, default=48,
                         help='Aggregation window length, should not be too large due to remainder')
     parser.add_argument('--pred_len', type=int, default=200, help='Prediction length')
-    parser.add_argument('--p_recon', type=float, default=0.1,
+    parser.add_argument('--p_recon', type=float, default=1,
                         help='Noise probability for the first stage, default was 1 in older versions')
     parser.add_argument('--p', type=float, default=0.5, help='Mask probability for the second stage')
     parser.add_argument('--multi', type=int, default=40, help='Number of sampling times in the first stage')
@@ -70,7 +70,7 @@ if __name__ == '__main__':
 
     data_train = data[:, train_slice]
     data_test = data[:, test_slice]
-    model = TS2Vec(
+    model = TSG2L(
         input_dims=data_train.shape[2],
         device=device,
         n_covars=n_covariate_cols,
