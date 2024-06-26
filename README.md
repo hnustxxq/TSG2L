@@ -5,5 +5,6 @@ This repository contains the official implementation for the paper [Robust multi
 The recommended requirements for TSG2L are specified as follows:
 
 - Python 3.7
+- torch==
 ```bash
 pip install -r requirements.txt
