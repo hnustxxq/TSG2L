@@ -4,3 +4,5 @@ This repository contains the official implementation for the paper [Robust multi
 ## Requirements
 The recommended requirements for TSG2L are specified as follows:
 
+```bash
+pip install -r requirements.txt
