@@ -16,8 +16,9 @@ pip install -r requirements.txt
 ```
 ## Data 
 The datasets can be obtained and put into datasets/ folder in the following way:
-- [3 ETT datasets]() should be placed at datasets/ETTh1.csv, datasets/ETTh2.csv and datasets/ETTm1.csv.
-
+- [3 ETT datasets](https://github.com/zhouhaoyi/ETDataset) should be placed at datasets/ETTh1.csv, datasets/ETTh2.csv and datasets/ETTm1.csv.
+- [Weather](https://archive.ics.uci.edu/dataset/381/beijing+pm2+5+data). should be placed at datasets/ETTh1.csv.
+- [](). 
 ## Usage
 To train and evaluate TSG2L on a dataset, run the following command:
 ```bash
