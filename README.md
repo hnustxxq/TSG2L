@@ -22,5 +22,5 @@ The datasets can be obtained and put into datasets/ folder in the following way:
 To train and evaluate TSG2L on a dataset, run the following command:
 ```bash
 python
-
+```
 ### Scripts: The scripts for reproduction are provided in scripts/ folder.
