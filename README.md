@@ -13,7 +13,7 @@ The recommended requirements for TSG2L are specified as follows:
 The dependencies can be installed by:
 ```bash
 pip install -r requirements.txt
-
+```
 ## Data 
 The datasets can be obtained and put into datasets/ folder in the following way:
 -
