@@ -18,17 +18,14 @@ pip install -r requirements.txt
 ## Data 
 The datasets can be obtained and put into datasets/ folder in the following way:
 ### forecast
-- [3 ETT datasets](https://github.com/zhouhaoyi/ETDataset) should be placed at datasets/forecast/ETTh1.csv, datasets/forecast/ETTh2.csv and datasets/forecast/ETTm1.csv.
-- []()
+- [3 ETT datasets](https://github.com/zhouhaoyi/ETDataset) should be placed at `datasets/forecast/ETTh1.csv`, `datasets/forecast/ETTh2.csv` and `datasets/forecast/ETTm1.csv`.
+- [Weather](https://archive.ics.uci.edu/dataset/381/beijing+pm2+5+data)should be placed at `datasets/forecast/Weather.csv`.
+- [Airquality](https://archive.ics.uci.edu/dataset/360/air+quality)should be placed at `datasets/forecast/Airquality.csv`.
 ### classification
-- [128UCRdatasets](https://www.cs.ucr.edu/~eamonn/time_series_data_2018) should be put into `datasets/UCR/` so that each data file can be located by
-
-datasets/UCR/<dataset_name>/<dataset_name>_*.csv.
-
-
-Such as [Chinatown](https://www.cs.ucr.edu/~eamonn/time_series_data_2018/Chinatown), ItalyPowerDemand, RacketSports, ArrowHead, SharePriceIncrease.
+- [128UCRdatasets](https://www.cs.ucr.edu/~eamonn/time_series_data_2018) should be put into `datasets/UCR/` so that each data file can be located by `datasets/UCR/<dataset_name>/<dataset_name>_*.csv`.
+Such as [Chinatown](https://www.cs.ucr.edu/~eamonn/time_series_data_2018/Chinatown), [ItalyPowerDemand](https://www.cs.ucr.edu/~eamonn/time_series_data_2018/ItalyPowerDemand), [RacketSports](https://www.cs.ucr.edu/~eamonn/time_series_data_2018/RacketSports), [ArrowHead](https://www.cs.ucr.edu/~eamonn/time_series_data_2018/ArrowHead), [SharePriceIncrease](https://www.cs.ucr.edu/~eamonn/time_series_data_2018/SharePriceIncrease).
 ### anomaly
-
+- [3 ETT datasets](https://github.com/zhouhaoyi/ETDataset) should be placed at datasets/forecast/ETTh1.csv, datasets/forecast/ETTh2.csv and datasets/forecast/ETTm1.csv.
 ## Usage
 To train and evaluate TSG2L on a dataset, run the following command:
 ```bash
