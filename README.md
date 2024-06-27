@@ -21,10 +21,10 @@ The datasets can be obtained and put into datasets/ folder in the following way:
 - [3 ETT datasets](https://github.com/zhouhaoyi/ETDataset) should be placed at datasets/forecast/ETTh1.csv, datasets/forecast/ETTh2.csv and datasets/forecast/ETTm1.csv.
 - []()
 ### classification
-- [128UCRdatasets](https://www.cs.ucr.edu/~eamonn/time_series_data_2018) should be put into datasets/UCR/ so that each data file can be located by
-<div style="background-color: white; padding: 10px;">
-datasets/UCR/<dataset_name>/<dataset_name>_*.csv
-</div>.
+- [128UCRdatasets](https://www.cs.ucr.edu/~eamonn/time_series_data_2018) should be put into 'datasets/UCR/' so that each data file can be located by
+
+datasets/UCR/<dataset_name>/<dataset_name>_*.csv.
+
 
 Such as [Chinatown](https://www.cs.ucr.edu/~eamonn/time_series_data_2018/Chinatown), ItalyPowerDemand, RacketSports, ArrowHead, SharePriceIncrease.
 ### anomaly
