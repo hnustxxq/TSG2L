@@ -10,5 +10,17 @@ The recommended requirements for TSG2L are specified as follows:
 - pandas==1.0.1
 - scikit-learn==0.24.2
 - scipy==1.7.3
+The dependencies can be installed by:
 ```bash
 pip install -r requirements.txt
+
+## Data 
+The datasets can be obtained and put into datasets/ folder in the following way:
+-
+
+## Usage
+To train and evaluate TSG2L on a dataset, run the following command:
+```bash
+python
+
+### Scripts: The scripts for reproduction are provided in scripts/ folder.
