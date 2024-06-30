@@ -23,7 +23,7 @@ The datasets can be obtained and put into datasets/ folder in the following way:
 - [airquality](https://archive.ics.uci.edu/dataset/360/air+quality)should be placed at `datasets/forecast/airquality.csv`.
 ### classification
 - [128UCRdatasets](https://www.cs.ucr.edu/~eamonn/time_series_data_2018) should be put into `datasets/UCR/` so that each data file can be located by `datasets/UCR/<dataset_name>/<dataset_name>_*.csv`.
-Such as [Chinatown](https://www.cs.ucr.edu/~eamonn/time_series_data_2018/Chinatown), [ItalyPowerDemand](https://www.cs.ucr.edu/~eamonn/time_series_data_2018/ItalyPowerDemand), [RacketSports](https://www.cs.ucr.edu/~eamonn/time_series_data_2018/RacketSports), [ArrowHead](https://www.cs.ucr.edu/~eamonn/time_series_data_2018/ArrowHead), [SharePriceIncrease](https://www.cs.ucr.edu/~eamonn/time_series_data_2018/SharePriceIncrease).
+Such as Chinatown, ItalyPowerDemand, RacketSports, ArrowHead, SharePriceIncrease.
 ### anomaly
 - [MSL](https://github.com/zhouhaoyi/ETDataset) should be placed at `datasets/anomaly/MSL.csv`.
 - [SMD](https://github.com/NetManAIOps/OmniAnomaly) should be placed at `datasets/anomaly/SMD.csv`.
