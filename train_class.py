@@ -28,7 +28,7 @@ if __name__ == '__main__':
     parser.add_argument('--c', type=int, default=4,
                         help='Aggregation window length, should not be too large due to remainder')
     parser.add_argument('--pred_len', type=int, default=10, help='Prediction length')
-    parser.add_argument('--p_recon', type=float, default=0.1,
+    parser.add_argument('--p_recon', type=float, default=1,
                         help='Noise probability for the first stage, default was 1 in older versions')
     parser.add_argument('--p', type=float, default=0.1, help='Mask probability for the second stage')
     parser.add_argument('--multi', type=int, default=50, help='Number of sampling times in the first stage')

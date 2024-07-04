@@ -15,22 +15,22 @@ if __name__ == '__main__':
 
 
     parser = argparse.ArgumentParser()
-    parser.add_argument('--dataset',default='ETTh1', help='The dataset name')
-    parser.add_argument('--size_cent', type=int, default=570, help='Batch size for the first stage')
-    parser.add_argument('--size_1', type=int, default=570, help='Batch size for the second stage')
-    parser.add_argument('--epoch', type=int, default=9,
+    parser.add_argument('--dataset',default='airquality', help='The dataset name')
+    parser.add_argument('--size_cent', type=int, default=576, help='Batch size for the first stage')
+    parser.add_argument('--size_1', type=int, default=576, help='Batch size for the second stage')
+    parser.add_argument('--epoch', type=int, default=5,
                         help='Number of epochs for single-scale training in the first stage')
-    parser.add_argument('--epoch_1', type=int, default=8, help='Number of epochs for the second stage')
-    parser.add_argument('--gru_dime', type=int, default=50, help='GRU hidden layer dimension')
-    parser.add_argument('--a_3', type=int, default=500, help='Representation dimension')
-    parser.add_argument('--c', type=int, default=48,
+    parser.add_argument('--epoch_1', type=int, default=10, help='Number of epochs for the second stage')
+    parser.add_argument('--gru_dime', type=int, default=40, help='GRU hidden layer dimension')
+    parser.add_argument('--a_3', type=int, default=100, help='Representation dimension')
+    parser.add_argument('--c', type=int, default=14,
                         help='Aggregation window length, should not be too large due to remainder')
     parser.add_argument('--pred_len', type=int, default=200, help='Prediction length')
     parser.add_argument('--p_recon', type=float, default=1,
                         help='Noise probability for the first stage, default was 1 in older versions')
-    parser.add_argument('--p', type=float, default=0.5, help='Mask probability for the second stage')
-    parser.add_argument('--multi', type=int, default=40, help='Number of sampling times in the first stage')
-    parser.add_argument('--count', type=int, default=4, help='Scale number,Must be less than epoch')
+    parser.add_argument('--p', type=float, default=0.6, help='Mask probability for the second stage')
+    parser.add_argument('--multi', type=int, default=20, help='Number of sampling times in the first stage')
+    parser.add_argument('--count', type=int, default=3, help='Scale number,Must be less than epoch')
     parser.add_argument('--port', type=int, default=6, help='Number of data splits when calculating Fourier scales')
     parser.add_argument('--run_name',default='forecast_csv',
                         help='The folder name used to save model, output and evaluation metrics. This can be set to any word')

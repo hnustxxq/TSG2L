@@ -27,25 +27,25 @@ from pyod.models.lscp import LSCP
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('--dataset',default='SWaT', help='The dataset name')
-    parser.add_argument('--dataset_sub', default='machine-1-2', help='The dataset name')
-    parser.add_argument('--size_cent', type=int, default=18, help='Batch size for the first stage')
-    parser.add_argument('--size_1', type=int, default=18, help='Batch size for the second stage')
-    parser.add_argument('--epoch', type=int, default=5,
+    parser.add_argument('--dataset_sub', default='machine-2-2', help='The dataset name')
+    parser.add_argument('--size_cent', type=int, default=30, help='Batch size for the first stage')
+    parser.add_argument('--size_1', type=int, default=30, help='Batch size for the second stage')
+    parser.add_argument('--epoch', type=int, default=6,
                         help='Number of epochs for single-scale training in the first stage')
-    parser.add_argument('--epoch_1', type=int, default=8, help='Number of epochs for the second stage')
-    parser.add_argument('--gru_dime', type=int, default=200, help='GRU hidden layer dimension')
-    parser.add_argument('--a_3', type=int, default=800, help='Representation dimension')
-    parser.add_argument('--c', type=int, default=4,
+    parser.add_argument('--epoch_1', type=int, default=1, help='Number of epochs for the second stage')
+    parser.add_argument('--gru_dime', type=int, default=150, help='GRU hidden layer dimension')
+    parser.add_argument('--a_3', type=int, default=300, help='Representation dimension')
+    parser.add_argument('--c', type=int, default=12,
                         help='Aggregation window length, should not be too large due to remainder')
-    parser.add_argument('--pred_len', type=int, default=10, help='Prediction length')
+    parser.add_argument('--pred_len', type=int, default=34, help='Prediction length')
     parser.add_argument('--pre_len', type=int, default=100, help='Downstream task data preprocessing length')
-    parser.add_argument('--batch_size', type=int, default=640,)
-    parser.add_argument('--p_recon', type=float, default=0.1,
+    parser.add_argument('--batch_size', type=int, default=100,)
+    parser.add_argument('--p_recon', type=float, default=1,
                         help='Noise probability for the first stage, default was 1 in older versions')
-    parser.add_argument('--p', type=float, default=0.1, help='Mask probability for the second stage')
-    parser.add_argument('--multi', type=int, default=50, help='Number of sampling times in the first stage')
+    parser.add_argument('--p', type=float, default=0.5, help='Mask probability for the second stage')
+    parser.add_argument('--multi', type=int, default=3, help='Number of sampling times in the first stage')
     parser.add_argument('--count', type=int, default=3, help='Must be less than epoch')
-    parser.add_argument('--port', type=int, default=2, help='Number of data splits when calculating Fourier scales')
+    parser.add_argument('--port', type=int, default=20, help='Number of data splits when calculating Fourier scales')
     parser.add_argument('--gpu', type=int, default=0,
                         help='The gpu no. used for training and inference (defaults to 0)')
     parser.add_argument('--seed', type=int, default=42, help='The random seed')
